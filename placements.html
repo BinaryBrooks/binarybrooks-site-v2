@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | BinaryBrooks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#5AA3E6', dark: '#111827' } } }
+    }
+  </script>
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <meta name="description" content="Binary Brooks — Academy of Technology & Industry Training in Hosur. Corporate training, internships, projects, and courses. ISO 9001:2008.">
+  
+
+
+
+
+<style>
+  #bb-preloader{position:fixed;inset:0;background:linear-gradient(180deg,#ffffff,#eef6ff);display:flex;align-items:center;justify-content:center;z-index:1000;transition:opacity .4s,visibility .4s}
+  #bb-preloader.hidden{opacity:0;visibility:hidden}
+  .bb-logo{width:68px;height:68px;border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(59,130,246,.15)}
+  .bb-logo img{width:48px;height:48px;animation:pulse 1.2s ease-in-out infinite}
+  .bb-mark{position:absolute;top:calc(50% + 56px);font:600 12px system-ui,-apple-system,Segoe UI,Roboto,Arial;color:#2563EB;letter-spacing:.08em}
+  @keyframes pulse{0%{transform:scale(1);opacity:.9}50%{transform:scale(1.06);opacity:1}100%{transform:scale(1);opacity:.9}}
+</style>
+
+
+<style>
+  .bb-fab{position:fixed; right:max(18px, env(safe-area-inset-right)); bottom:max(18px, env(safe-area-inset-bottom)); z-index:9999; display:flex; flex-direction:column; gap:12px}
+  .bb-fab a{width:56px; height:56px; border-radius:9999px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,.18); text-decoration:none; font-weight:700; letter-spacing:.02em}
+  .bb-fab a:hover{transform:translateY(-2px)}
+  .bb-fab .wa{background:#22c55e; color:#fff}
+  .bb-fab .call{background:#5AA3E6; color:#fff}
+  @media (max-width:768px){ .bb-fab a{width:52px;height:52px} }
+</style>
+
+</head>
+<body class="text-gray-800">
+
+<div id="bb-preloader" aria-label="Loading">
+  <div class="bb-logo"><img src="assets/logo.png" alt="BinaryBrooks"></div>
+  <div class="bb-mark">BINARYBROOKS</div>
+</div>
+<script>
+  window.addEventListener('load', function(){var el=document.getElementById('bb-preloader'); if(el){el.classList.add('hidden'); setTimeout(function(){el.remove();},500);}});
+  setTimeout(function(){var el=document.getElementById('bb-preloader'); if(el){el.classList.add('hidden'); setTimeout(function(){el.remove();},500);}} ,3000);
+</script
+<header class="bg-white/90 backdrop-blur sticky top-0 z-50 shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="BinaryBrooks" class="h-10 w-10">
+      <div class="font-extrabold tracking-tight text-xl"><span class="text-primary">BINARY</span>BROOKS</div>
+    </a>
+    <button id="navToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded border" aria-label="Menu">
+      ☰
+    </button>
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="index.html" class="hover:text-primary">Home</a>
+      <a href="courses.html" class="hover:text-primary">Courses</a>
+      <a href="corporate.html" class="hover:text-primary">Corporate Training</a>
+      <a href="internships.html" class="hover:text-primary">Internships</a>
+      <a href="projects.html" class="hover:text-primary">Projects</a>
+      <a href="about.html" class="hover:text-primary">About</a>
+      <a href="gallery.html" class="hover:text-primary">Gallery</a>
+      <a href="contact.html" class="px-3 py-2 rounded-md bg-primary text-white">Contact</a>
+    </nav>
+  </div>
+  <div id="mobileNav" class="md:hidden hidden border-t bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-3 grid gap-3 text-sm">
+      <a href="index.html" class="py-1">Home</a>
+      <a href="courses.html" class="py-1">Courses</a>
+      <a href="corporate.html" class="py-1">Corporate Training</a>
+      <a href="internships.html" class="py-1">Internships</a>
+      <a href="projects.html" class="py-1">Projects</a>
+      <a href="about.html" class="py-1">About</a>
+      <a href="gallery.html" class="py-1">Gallery</a>
+      <a href="contact.html" class="py-1 font-semibold text-primary">Contact</a>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var btn=document.getElementById('navToggle');
+      var m=document.getElementById('mobileNav');
+      if(btn && m){
+        btn.addEventListener('click', function(){ m.classList.toggle('hidden'); });
+      }
+    })();
+  </script>
+</header>
+
+<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+  <h1 class="text-3xl font-bold">Placement Assistance Policy</h1>
+  <p class="opacity-70 mt-2 text-sm">Last updated: 2025-08-09</p>
+  <div class="prose max-w-none mt-6"><h2 class='text-xl font-bold mt-6'>Scope</h2><p class='text-sm opacity-80 mt-2'>We provide guidance, resume reviews, mock interviews, and referrals where possible.</p>
+<h2 class='text-xl font-bold mt-6'>No Guarantee</h2><p class='text-sm opacity-80 mt-2'>Placements depend on candidate performance and market conditions; no guaranteed jobs.</p>
+<h2 class='text-xl font-bold mt-6'>Eligibility</h2><p class='text-sm opacity-80 mt-2'>Complete required coursework and meet assessment thresholds to be eligible.</p></div>
+</section>
+<footer class="bg-gray-900 text-gray-200 mt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-8">
+    <div>
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" class="h-10 w-10" alt="logo">
+        <div class="font-extrabold text-xl"><span class="text-primary">BINARY</span>BROOKS</div>
+      </div>
+      <p class="mt-3 text-sm opacity-80">Empowering Innovation. Bit by Bit. ISO 9001:2008 Certified.</p>
+    </div>
+    <div>
+      <h4 class="font-bold mb-3">Contact</h4>
+      <p class="text-sm">No.48/A9 Old Bangalore Road,<br>Near ASTC Bus Depot, Hosur – 635109</p>
+      <p class="mt-2 text-sm">📞 95149 31507, 63792 29338</p>
+      <p class="text-sm">✉️ info@binarybrooks.com<br>marketing@binarybrooks.com<br>admission@binarybrooks.com</p>
+    </div>
+    <div>
+      <h4 class="font-bold mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="courses.html" class="hover:text-primary">Courses</a></li>
+        <li><a href="corporate.html" class="hover:text-primary">Corporate Training</a></li>
+        <li><a href="internships.html" class="hover:text-primary">Internships</a></li>
+        <li><a href="projects.html" class="hover:text-primary">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold mb-3">Policies</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="privacy.html" class="hover:text-primary">Privacy Policy</a></li>
+        <li><a href="terms.html" class="hover:text-primary">Terms & Conditions</a></li>
+        <li><a href="refund.html" class="hover:text-primary">Return & Refund</a></li>
+        <li><a href="certification.html" class="hover:text-primary">Certification Policy</a></li>
+        <li><a href="placements.html" class="hover:text-primary">Placement Policy</a></li>
+        <li><a href="training-policy.html" class="hover:text-primary">Internship & Training Policy</a></li>
+      </ul>
+      <p class="text-xs mt-3 opacity-70">© 2025 BinaryBrooks.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<div class="bb-fab" id="bb-fab">
+  <a href="https://wa.me/919514931507" class="wa" aria-label="WhatsApp">WA</a>
+  <a href="tel:+919514931507" class="call" aria-label="Call">Call</a>
+</div>
+
+</body>
+</html>
+
+
+<div class="bb-fab" id="bb-fab">
+  <a href="https://wa.me/919514931507" class="wa" aria-label="WhatsApp">WA</a>
+  <a href="tel:+919514931507" class="call" aria-label="Call">Call</a>
+</div>
+
+</body>
+</html>
