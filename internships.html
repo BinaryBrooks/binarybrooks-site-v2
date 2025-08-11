@@ -11,7 +11,7 @@
     }
   </script>
   <link rel="icon" type="image/png" href="/assets/logo.png">
-  <meta name="description" content="Binary Brooks — Academy of Technology & Industry Training in Hosur. Corporate training, internships, projects, and courses. ISO 9001:2008.">
+  <meta name="description" content="Binary Brooks — Academy of Technology & Industry Training in Hosur. Corporate training, internships, projects, and courses.">
   
 
 
@@ -70,6 +70,7 @@
       <a href="about.html" class="hover:text-primary">About</a>
       <a href="gallery.html" class="hover:text-primary">Gallery</a>
       <a href="contact.html" class="px-3 py-2 rounded-md bg-primary text-white">Contact</a>
+      <div id="bb-auth-container" class="ml-2"></div>
     </nav>
   </div>
   <div id="mobileNav" class="md:hidden hidden border-t bg-white">
@@ -82,6 +83,7 @@
       <a href="about.html" class="py-1">About</a>
       <a href="gallery.html" class="py-1">Gallery</a>
       <a href="contact.html" class="py-1 font-semibold text-primary">Contact</a>
+      <div id="bb-mobile-auth-container" class="border-t pt-3 mt-3"></div>
     </div>
   </div>
   <script>
@@ -198,10 +200,10 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-8">
     <div>
       <div class="flex items-center gap-3">
-        <img src="assets/logo.png" class="h-10 w-10" alt="logo">
+        <img src="assets/logo_white.png" class="h-10 w-10" alt="logo">
         <div class="font-extrabold text-xl"><span class="text-primary">BINARY</span>BROOKS</div>
       </div>
-      <p class="mt-3 text-sm opacity-80">Empowering Innovation. Bit by Bit. ISO 9001:2008 Certified.</p>
+      <p class="mt-3 text-sm opacity-80">Empowering Innovation. Bit by Bit.</p>
     </div>
     <div>
       <h4 class="font-bold mb-3">Contact</h4>
@@ -280,6 +282,6 @@ document.querySelectorAll('[data-card]').forEach(card => {
   <a href="https://wa.me/919514931507" class="wa" aria-label="WhatsApp">WA</a>
   <a href="tel:+919514931507" class="call" aria-label="Call">Call</a>
 </div>
-
+<script src="auth.js"></script>
 </body>
 </html>
